@@ -159,22 +159,22 @@ function App() {
 <p>{goal}</p>
 
 {careerInfo[goal] && (
-  <div className="career-info">
-    <p>
-      💰 Salary:
-      {careerInfo[goal].salary}
-    </p>
-
-    <p>
-      📈 Demand:
-      {careerInfo[goal].demand}
-    </p>
-
-    <p>
-      🔥 Difficulty:
-      {careerInfo[goal].difficulty}
-    </p>
+  <div className="career-stats">
+  <div className="stat-card">
+    <h4>💰 Salary</h4>
+    <p>{careerInfo[goal].salary}</p>
   </div>
+
+  <div className="stat-card">
+    <h4>📈 Demand</h4>
+    <p>{careerInfo[goal].demand}</p>
+  </div>
+
+  <div className="stat-card">
+    <h4>🔥 Difficulty</h4>
+    <p>{careerInfo[goal].difficulty}</p>
+  </div>
+</div>
 )}
       {roadmap.length > 0 && (
         <>
