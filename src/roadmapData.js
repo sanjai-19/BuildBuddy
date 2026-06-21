@@ -239,12 +239,17 @@ resources: ["JavaScript.info"],
 completed: false,
 },
 {
-title: "Git & GitHub",
-why: "Track code changes",
-duration: "1 Week",
-project: "Host Projects Online",
-resources: ["GitHub Docs"],
-completed: false,
+  title: "Learn Git & GitHub",
+  why: "Version control for projects",
+  duration: "1 Week",
+  project: "Host Python Projects",
+  resources: [
+    {
+      name: "GitHub Docs",
+      url: "https://docs.github.com/"
+    }
+  ],
+  completed: false,
 },
 {
 title: "React Fundamentals",
@@ -353,7 +358,12 @@ title: "Learn HTML",
 why: "Build webpage structure",
 duration: "1 Week",
 project: "Personal Profile Page",
-resources: ["MDN HTML"],
+resources: [
+  {
+    name: "MDN HTML",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  }
+],
 completed: false,
 },
 {

@@ -219,8 +219,20 @@ function App() {
                 </p>
 
                <ul>
-  {(step.resources || []).map((resource, i) => (
-    <li key={i}>{resource}</li>
+  {step.resources.map((resource, i) => (
+    <li key={i}>
+      {typeof resource === "string" ? (
+        resource
+      ) : (
+        <a
+          href={resource.url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {resource.name}
+        </a>
+      )}
+    </li>
   ))}
 </ul>
               </div>
