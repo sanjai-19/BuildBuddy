@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #03133f;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+input {
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.learning-path-title {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.progress-text {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.roadmap-card {
+  background: #1d2d50;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.card-header input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.card-header label {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.card-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.card-content ul {
+  padding-left: 20px;
+}
+
+.card-content li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #ffffff;
+}
+.suggestions {
+  width: 400px;
+  max-width: 90%;
+  margin: 10px auto;
+  background: #1c2945;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-bottom: 1px solid #31457a;
+}
+
+.suggestion-item:hover {
+  background: #31457a;
+}
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.career-card {
+  background: #1c2945;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  background: #31457a;
+}

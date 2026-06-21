@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #06143a;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  max-width: 90%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.learning-path-title {
+  margin-top: 40px;
+}
+
+.progress-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.roadmap-card {
+  background: #1c2945;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-header input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.card-content p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+.card-content ul {
+  margin-left: 25px;
+}
+
+.card-content li {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+.roadmap-card {
+  background: #1c2945;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.progress-bar {
+  width: 100%;
+  max-width: 700px;
+  height: 12px;
+  background: #2d3f66;
+  border-radius: 20px;
+  margin: 20px auto 30px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4ade80;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+.roadmap-card a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.roadmap-card a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.roadmap-card a:visited {
+  color: #60a5fa;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+.completed-title {
+  color: #4ade80;
+  opacity: 0.7;
+}
+.progress-text {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 14px;
+  background: #31457a;
+  border-radius: 20px;
+  margin: 20px auto 35px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #57e389;
+  border-radius: 20px;
+  transition: width 0.6s ease-in-out;
+}
+
+.roadmap-card a {
+  color: #5da9ff;
+  text-decoration: none;
+}
+
+.roadmap-card a:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.career-card {
+  background: #1c2945;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  background: #2b3d66;
+}
+.career-card h3 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.career-card p {
+  margin-top: 8px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.career-card {
+  background: #1c2945;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.career-card h3 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.career-card p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
