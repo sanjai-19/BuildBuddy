@@ -6,6 +6,8 @@ import {
 function App() {
   const [goal, setGoal] = useState("");
   const [roadmap, setRoadmap] = useState([]);
+  const [compareCareer, setCompareCareer] =
+  useState("");
 
   useEffect(() => {
     const savedRoadmap = localStorage.getItem("roadmap");
@@ -133,12 +135,34 @@ function App() {
 >
   Reset Progress
 </button>
+<div style={{ marginTop: "20px" }}>
+  <h3>Compare Careers</h3>
+
+  <select
+    value={compareCareer}
+    onChange={(e) =>
+      setCompareCareer(e.target.value)
+    }
+  >
+    <option value="">
+      Select Career
+    </option>
+
+    {Object.keys(careerInfo).map((career) => (
+      <option key={career} value={career}>
+        {career}
+      </option>
+    ))}
+  </select>
+</div>
 
 <div className="career-grid">
   {Object.keys(careerPaths).map((career) => (
     <button
-      key={career}
-      className="career-card"
+  key={career}
+  className={`career-card ${
+    goal === career ? "selected-career" : ""
+  }`}
       onClick={() => loadCareer(career)}
     >
       <h3>{career}</h3>
@@ -171,10 +195,52 @@ function App() {
   </div>
 
   <div className="stat-card">
-    <h4>🔥 Difficulty</h4>
-    <p>{careerInfo[goal].difficulty}</p>
-  </div>
+  <h4>⏳ Learning Time</h4>
+  <p>{careerInfo[goal].learningTime}</p>
 </div>
+</div>
+)}
+{goal &&
+  compareCareer &&
+  careerInfo[goal] &&
+  careerInfo[compareCareer] && (
+    <div className="comparison-card">
+      <h2>
+        {goal} vs {compareCareer}
+      </h2>
+
+      <p>
+        💰 Salary:
+        {" "}
+        {careerInfo[goal].salary}
+        {" vs "}
+        {careerInfo[compareCareer].salary}
+      </p>
+
+      <p>
+        📈 Demand:
+        {" "}
+        {careerInfo[goal].demand}
+        {" vs "}
+        {careerInfo[compareCareer].demand}
+      </p>
+
+      <p>
+        🔥 Difficulty:
+        {" "}
+        {careerInfo[goal].difficulty}
+        {" vs "}
+        {careerInfo[compareCareer].difficulty}
+      </p>
+
+      <p>
+        ⏳ Learning Time:
+        {" "}
+        {careerInfo[goal].learningTime}
+        {" vs "}
+        {careerInfo[compareCareer].learningTime}
+      </p>
+    </div>
 )}
       {roadmap.length > 0 && (
         <>

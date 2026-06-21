@@ -1,9 +1,10 @@
 export const careerInfo = {
   "ai engineer": {
-    salary: "₹10–25 LPA",
-    demand: "Very High",
-    difficulty: "Hard",
-  },
+  salary: "₹10–25 LPA",
+  demand: "Very High",
+  difficulty: "Hard",
+  learningTime: "6–12 Months",
+},
 
   "frontend developer": {
     salary: "₹6–15 LPA",
@@ -751,3 +752,4 @@ completed: false,
 },
 ],
 };
+
