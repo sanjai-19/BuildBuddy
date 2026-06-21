@@ -1,4 +1,34 @@
-export const careerPaths = {
+export const careerInfo = {
+  "ai engineer": {
+    salary: "₹10–25 LPA",
+    demand: "Very High",
+    difficulty: "Hard",
+  },
+
+  "frontend developer": {
+    salary: "₹6–15 LPA",
+    demand: "High",
+    difficulty: "Medium",
+  },
+
+  "backend developer": {
+    salary: "₹8–18 LPA",
+    demand: "High",
+    difficulty: "Medium",
+  },
+
+  "full stack developer": {
+    salary: "₹8–20 LPA",
+    demand: "Very High",
+    difficulty: "Medium",
+  },
+
+  "data analyst": {
+    salary: "₹5–12 LPA",
+    demand: "High",
+    difficulty: "Easy",
+  },
+};export const careerPaths = {
 "ai engineer": [
 {
 title: "Learn Python",

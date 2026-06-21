@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { careerPaths } from "./roadmapData";
-
+import {
+  careerPaths,
+  careerInfo,
+} from "./roadmapData";
 function App() {
   const [goal, setGoal] = useState("");
   const [roadmap, setRoadmap] = useState([]);
@@ -153,8 +155,27 @@ function App() {
 <h2 style={{ marginTop: "30px" }}>
   Your Goal:
 </h2>
-      <p>{goal}</p>
 
+<p>{goal}</p>
+
+{careerInfo[goal] && (
+  <div className="career-info">
+    <p>
+      💰 Salary:
+      {careerInfo[goal].salary}
+    </p>
+
+    <p>
+      📈 Demand:
+      {careerInfo[goal].demand}
+    </p>
+
+    <p>
+      🔥 Difficulty:
+      {careerInfo[goal].difficulty}
+    </p>
+  </div>
+)}
       {roadmap.length > 0 && (
         <>
           <h2>Your Learning Path</h2>

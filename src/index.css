@@ -232,3 +232,14 @@ input[type="checkbox"] {
   margin-top: 10px;
   opacity: 0.8;
 }
+.career-info {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: #1e293b;
+}
+
+.career-info p {
+  margin: 8px 0;
+  font-weight: 600;
+}
