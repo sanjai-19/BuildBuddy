@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import jsPDF from "jspdf";
 import {
   careerPaths,
   careerInfo,
@@ -79,6 +80,42 @@ function App() {
       JSON.stringify(resetRoadmap)
     );
   };
+  const downloadRoadmapPDF = () => {
+  const doc = new jsPDF();
+
+  doc.setFontSize(18);
+  doc.text("BuildBuddy Roadmap", 20, 20);
+
+  doc.setFontSize(12);
+  doc.text(`Career Goal: ${goal}`, 20, 35);
+
+  doc.text(
+    `Progress: ${Math.round(progressPercentage)}%`,
+    20,
+    45
+  );
+
+  let y = 60;
+
+  roadmap.forEach((step, index) => {
+    doc.text(
+     `${index + 1}. ${step.title} ${
+  step.completed ? "[DONE]" : "[TODO]"
+}`,
+      20,
+      y
+    );
+
+    y += 10;
+
+    if (y > 270) {
+      doc.addPage();
+      y = 20;
+    }
+  });
+
+  doc.save(`${goal}-roadmap.pdf`);
+};
 
   const completedCount = roadmap.filter(
     (step) => step.completed
@@ -135,6 +172,14 @@ function App() {
 >
   Reset Progress
 </button>
+
+<button
+  onClick={downloadRoadmapPDF}
+  style={{ marginLeft: "10px" }}
+>
+  📄 Download Roadmap
+</button>
+
 <div style={{ marginTop: "20px" }}>
   <h3>Compare Careers</h3>
 
