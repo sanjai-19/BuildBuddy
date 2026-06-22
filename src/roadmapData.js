@@ -1,35 +1,68 @@
 export const careerInfo = {
   "ai engineer": {
-  salary: "₹10–25 LPA",
-  demand: "Very High",
-  difficulty: "Hard",
-  learningTime: "6–12 Months",
-},
+    salary: "₹10–25 LPA",
+    demand: "Very High",
+    difficulty: "Hard",
+    learningTime: "6–12 Months",
+  },
 
   "frontend developer": {
     salary: "₹6–15 LPA",
     demand: "High",
     difficulty: "Medium",
+    learningTime: "4–8 Months",
   },
 
   "backend developer": {
     salary: "₹8–18 LPA",
     demand: "High",
     difficulty: "Medium",
+    learningTime: "5–9 Months",
   },
 
   "full stack developer": {
     salary: "₹8–20 LPA",
     demand: "Very High",
     difficulty: "Medium",
+    learningTime: "6–12 Months",
   },
 
   "data analyst": {
     salary: "₹5–12 LPA",
     demand: "High",
     difficulty: "Easy",
+    learningTime: "3–6 Months",
   },
-};export const careerPaths = {
+
+  "data scientist": {
+    salary: "₹12–30 LPA",
+    demand: "Very High",
+    difficulty: "Hard",
+    learningTime: "8–14 Months",
+  },
+
+  "cloud engineer": {
+    salary: "₹10–22 LPA",
+    demand: "High",
+    difficulty: "Medium",
+    learningTime: "6–10 Months",
+  },
+
+  "devops engineer": {
+    salary: "₹12–25 LPA",
+    demand: "Very High",
+    difficulty: "Hard",
+    learningTime: "8–12 Months",
+  },
+
+  "cybersecurity analyst": {
+    salary: "₹8–20 LPA",
+    demand: "Very High",
+    difficulty: "Medium",
+    learningTime: "6–12 Months",
+  },
+};
+export const careerPaths = {
 "ai engineer": [
 {
 title: "Learn Python",
@@ -47,6 +80,7 @@ project: "Host Python Projects",
 resources: ["GitHub Docs"],
 completed: false,
 },
+
 {
 title: "Learn SQL",
 why: "Store and query data",

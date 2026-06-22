@@ -193,6 +193,10 @@ function App() {
     <h4>📈 Demand</h4>
     <p>{careerInfo[goal].demand}</p>
   </div>
+  <div className="stat-card">
+  <h4>🔥 Difficulty</h4>
+  <p>{careerInfo[goal].difficulty}</p>
+</div>
 
   <div className="stat-card">
   <h4>⏳ Learning Time</h4>
